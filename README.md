@@ -12,16 +12,16 @@ Tools used:
 
 ## Using PortAudio in a project
 
-- To install PortAudio
+- To install PortAudio:
 
 ```sudo make install```
 
-- Copying ```libportaudio.a```:
+- Copying *libportaudio.a*:
 
 ```cp lib/.libs/libportaudio.a /YOUR/PROJECT/DIR```
 OR
-```cp /usr/local/lib/libportaudio.a /YOUR/PROJECT/DUR```
+```cp /usr/local/lib/libportaudio.a /YOUR/PROJECT/DIR```
 
-- It is necessary to copy *portaudio.h* located in ```include/```
+- It is necessary to copy *portaudio.h* located in *include/*
 
 ```gcc main.c libportaudio.a -lrt -lm -lasound -ljack -pthread -o YOUR_BINARY```
